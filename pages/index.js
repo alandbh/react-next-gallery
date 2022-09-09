@@ -1,5 +1,6 @@
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
+import Head from "next/head";
 
 const imgStyles = {
     marginLeft: 0,
@@ -19,6 +20,23 @@ export default function Home() {
 
     return (
         <div>
+            <Head>
+                <meta charSet="utf-8" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+                <meta
+                    name="viewport"
+                    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+                />
+                <meta name="description" content="App de teste" />
+                <meta name="theme-color" content="#000" />
+                <title>Alan`s Flicky</title>
+                <link rel="manifest" href="/manifest.json" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <link
+                    rel="apple-touch-icon"
+                    href="/apple-touch-icon.png"
+                ></link>
+            </Head>
             <Flickity
                 className={"carousel"} // default ''
                 elementType={"div"} // default 'div'
